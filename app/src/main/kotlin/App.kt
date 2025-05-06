@@ -6,7 +6,7 @@ fun main() {
     val notes = mutableListOf<Note>()
 
     menu {
-        item("Add note") {
+        item("Add a note") {
             print("Enter the description: ")
             val description = readln()
 
@@ -16,7 +16,7 @@ fun main() {
             println("Listing all notes")
             println(notes)
         }
-        item("Delete note") {
+        item("Delete a note") {
             print("Enter the id to delete: ")
             val id = readln().toIntOrNull()
 
